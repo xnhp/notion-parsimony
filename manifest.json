@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "notion-parsimony",
+    "version": "1.0",
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "notion-parsimony@moserbenj"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.notion.so/*"],
+            "js": [
+                "zepto.min.js",
+                "content.js"
+            ]
+        }
+    ]
+
+}
